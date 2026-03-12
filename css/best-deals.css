@@ -1,7 +1,7 @@
 
         .package-card
         {
-            background: white;
+            background: rgb(224, 221, 221);
             width: 350px;
             height:510px;
             padding: 10px;
@@ -24,7 +24,7 @@
               display: flex;
              justify-content: center;
              padding-top: 10px;
-             background-color:rgb(214, 173, 145);
+             background-color:rgb(231, 141, 81);
             border-radius: 20px;
             border: none;
             margin:10px;
@@ -33,7 +33,7 @@
     margin-left: 20px;
 }
 .btn{
-    background-color: rgb(214, 173, 145);
+    background-color: rgb(231, 141, 81);;
     border:none;
     margin-bottom: 15px;
     margin-left: 40px;
