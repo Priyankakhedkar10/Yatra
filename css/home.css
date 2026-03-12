@@ -1,41 +1,15 @@
-.main-container{
+.home-info{
+    padding-top: 100px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    text-justify: auto;
     align-items: center;
-    padding-top: 10px;
+     
 }
-.website-name{
-    font-weight: 700;
+.infoheading{
+ font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
-    padding-left: 10px;
-    color:white;
 }
-.main-logo-img{
-    width:70px;
-    height:70px;
-    border-radius: 50%;
-}
-.img-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.nav-menu{
-    display: flex;
-    flex-direction: row;
-    gap:30px;
-}
-.menu{
-    text-decoration: none;
-    color: black;
-    font-weight: 1000;
-    font-size: 18px;
-}
-.main-section{
-    background-image: url(./../images/home2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    opacity: 0.8;
+.home-heading{
+    font-size: 50px;
 }
