@@ -7,7 +7,7 @@
             padding: 10px;
             border-radius: 10px;
             border: 4px double #007a99;
-            margin: 90px 10px 10px 40px;
+            margin: 10px 10px 10px 40px;
             display: inline-block;
         }
 
@@ -52,4 +52,27 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+     font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    color:white;
+}
+.heading-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+     font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    color:white;
+   
 }
