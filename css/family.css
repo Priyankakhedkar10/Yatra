@@ -76,3 +76,43 @@
     color:white;
    
 }
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .package-card {
+        width: calc(100% - 40px);
+        margin: 10px auto;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .package-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-container,
+    .btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .package-card {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .textfont,
+    .card-info {
+        font-size: 14px;
+    }
+}

@@ -57,3 +57,36 @@
     padding:5px 10px;
     border-radius: 5px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .home-info {
+        padding-top: 60px;
+    }
+
+    .heading,
+    .heading-info {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .recomandation {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-heading {
+        font-size: 36px;
+    }
+
+    .infoheading {
+        font-size: 22px;
+    }
+
+    .recomandation {
+        gap: 12px;
+    }
+}
