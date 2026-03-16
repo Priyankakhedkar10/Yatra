@@ -39,7 +39,6 @@
     height: 125vh;
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
     .main-container {
         flex-direction: column;

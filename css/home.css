@@ -58,7 +58,7 @@
     border-radius: 5px;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 900px) {
     .home-info {
         padding-top: 60px;

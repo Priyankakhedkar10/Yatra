@@ -76,7 +76,7 @@
     color:white;
    
 }
-/* Responsive adjustments */
+
 @media (max-width: 900px) {
     .package-card {
         width: calc(100% - 40px);
