@@ -4,38 +4,41 @@
     flex-direction: column;
     text-justify: auto;
     align-items: center;
-     
 }
+
 .infoheading{
- font-weight: 900;
+    font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .home-heading{
     font-size: 50px;
 }
+
 .heading{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-     font-weight: 700;
+    font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 10px;
     color:white;
 }
+
 .heading-info{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-     font-weight: 700;
+    font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 10px;
     color:white;
-   
 }
+
 .recomandation{
     margin-top:10px;
     color:white;
@@ -45,6 +48,7 @@
     gap: 50px;
     justify-content: center;
 }
+
 .recomandation-items{
     display: flex;
     flex-direction: column;
@@ -52,41 +56,88 @@
     gap:10px;
     margin-top:10px;
 }
+
 .count{
     color:white;
     padding:5px 10px;
     border-radius: 5px;
 }
 
+/* ========================= */
+/* 📱 Mobile (max 600px) */
+/* ========================= */
+@media (max-width: 600px) {
 
-@media (max-width: 900px) {
-    .home-info {
+    .home-info{
         padding-top: 60px;
+        text-align: center;
+    }
+
+    .home-heading{
+        font-size: 28px;
     }
 
     .heading,
-    .heading-info {
+    .heading-info{
         flex-direction: column;
-        text-align: center;
+        font-size: 14px;
         padding-left: 0;
+        text-align: center;
     }
 
-    .recomandation {
+    .recomandation{
         flex-direction: column;
         gap: 20px;
     }
+
+    .recomandation-items{
+        width: 100%;
+    }
 }
 
-@media (max-width: 600px) {
-    .home-heading {
-        font-size: 36px;
+/* ========================= */
+/* 📲 Tablet (601px - 992px) */
+/* ========================= */
+@media (min-width: 601px) and (max-width: 992px) {
+
+    .home-info{
+        padding-top: 80px;
     }
 
-    .infoheading {
-        font-size: 22px;
+    .home-heading{
+        font-size: 38px;
     }
 
-    .recomandation {
-        gap: 12px;
+    .heading,
+    .heading-info{
+        font-size: 16px;
+    }
+
+    .recomandation{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .recomandation-items{
+        width: 45%;
+    }
+}
+
+/* ========================= */
+/* 💻 Laptop (993px and above) */
+/* ========================= */
+@media (min-width: 993px) {
+
+    .home-heading{
+        font-size: 50px;
+    }
+
+    .recomandation{
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .recomandation-items{
+        width: auto;
     }
 }

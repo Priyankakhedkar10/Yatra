@@ -5,77 +5,135 @@
     align-items: center;
     padding-top: 10px;
 }
+
 .website-name{
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 10px;
     color:white;
 }
+
 .main-logo-img{
     width:70px;
     height:70px;
     border-radius: 50%;
 }
+
 .img-container{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .nav-menu{
     display: flex;
     flex-direction: row;
     gap:30px;
 }
+
 .menu{
     text-decoration: none;
     color: white;
     font-weight: 1000;
     font-size: 18px;
 }
+
 .main-section{
-    background-image:  linear-gradient(rgba(196, 152, 152, 0.3), rgba(0, 0, 0, 0.3)),url(./../images/home7.png);
+    background-image: linear-gradient(rgba(196, 152, 152, 0.3), rgba(0, 0, 0, 0.3)),url(./../images/home7.png);
     background-size: cover;
     background-position: center;
     height: 125vh;
 }
 
-@media (max-width: 900px) {
-    .main-container {
+/* ========================= */
+/* 📱 Mobile (max 600px) */
+/* ========================= */
+@media (max-width: 600px){
+
+    .main-container{
         flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
+        gap: 10px;
+        padding: 10px;
     }
 
-    .img-container {
+    .img-container{
         justify-content: center;
-        width: 100%;
     }
 
-    .nav-menu {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-        padding-left: 10px;
+    .main-logo-img{
+        width:50px;
+        height:50px;
     }
 
-    .menu {
+    .website-name{
         font-size: 16px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .menu{
+        font-size: 16px;
+    }
+
+    .main-section{
+        height: 100vh;
+        background-position: center;
     }
 }
 
-@media (max-width: 600px) {
-    .website-name {
+/* ========================= */
+/* 📲 Tablet (601px - 992px) */
+/* ========================= */
+@media (min-width: 601px) and (max-width: 992px){
+
+    .main-container{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-logo-img{
+        width:60px;
+        height:60px;
+    }
+
+    .website-name{
         font-size: 18px;
-        padding-left: 10px;
     }
 
-    .main-logo-img {
-        width: 55px;
-        height: 55px;
+    .nav-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
 
-    .main-section {
-        height: auto;
-        padding: 80px 0 40px;
+    .menu{
+        font-size: 17px;
+    }
+
+    .main-section{
+        height: 110vh;
+    }
+}
+
+/* ========================= */
+/* 💻 Laptop (993px and above) */
+/* ========================= */
+@media (min-width: 993px){
+
+    .main-container{
+        flex-direction: row;
+    }
+
+    .nav-menu{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .main-section{
+        height: 125vh;
     }
 }
